@@ -567,13 +567,12 @@
           </div>
         </div>
 
-	<form class="contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST">          
+	<form class="contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST">      
+		<input type="hidden" name="access_key" value="27b1bf09-0f19-4155-a2f4-694af4c6c0be">
+		<input type="hidden" name="subject" value="New Portfolio Contact Message">
+		<input type="hidden" name="from_name" value="Portfolio Website">
+		<input type="checkbox" name="botcheck" style="display:none;">
 		<div class="form-group">
-			<input type="hidden" name="access_key" value="27b1bf09-0f19-4155-a2f4-694af4c6c0be">
-			<input type="hidden" name="subject" value="New Portfolio Contact Message">
-			<input type="hidden" name="from_name" value="Portfolio Website">
-			<input type="checkbox" name="botcheck" style="display:none;">
-			
             <label for="name">Name <span aria-hidden="true">*</span></label>
             <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" aria-required="true" />
             <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
