@@ -11,6 +11,8 @@
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = themeToggle ? themeToggle.querySelector('.theme-icon') : null;
   const THEME_KEY = 'sb-portfolio-theme';
+  
+  document.getElementById("year").textContent = new Date().getFullYear();
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
