@@ -291,46 +291,24 @@
 
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      // Validate all fields
-      let isValid = true;
-      fields.forEach(function (field) {
-        if (!validateField(field)) {
-          isValid = false;
+        // DO NOT prevent default
+      
+        let isValid = true;
+      
+        fields.forEach(function (field) {
+          if (!validateField(field)) {
+            isValid = false;
+          }
+        });
+      
+        if (!isValid) {
+          e.preventDefault();
+          return;
         }
-      });
-
-      if (!isValid) return;
-
-      // Simulate submission (front-end only)
-      if (submitBtn) {
+      
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
-      }
-
-      setTimeout(function () {
-        if (submitBtn) {
-          submitBtn.textContent = 'Send Message';
-          submitBtn.disabled = false;
-        }
-
-        if (formSuccess) {
-          formSuccess.classList.add('visible');
-          formSuccess.removeAttribute('aria-hidden');
-        }
-
-        contactForm.reset();
-
-        // Hide success message after 6 seconds
-        setTimeout(function () {
-          if (formSuccess) {
-            formSuccess.classList.remove('visible');
-            formSuccess.setAttribute('aria-hidden', 'true');
-          }
-        }, 6000);
-      }, 900);
-    });
+      });
   }
 
   /* ============================================
