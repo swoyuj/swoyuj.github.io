@@ -1,666 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Swoyuj Bajracharya – Technical Project Manager and Senior Full Stack Developer with 10+ years of experience delivering scalable software and leading cross-functional teams." />
-  <meta name="keywords" content="Swoyuj Bajracharya, Technical Project Manager, Full Stack Developer, ASP.NET, C#, SQL Server, Agile, Scrum, Nepal" />
-  <meta name="author" content="Swoyuj Bajracharya" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Swoyuj Bajracharya | Technical Project Manager & Full Stack Developer" />
-  <meta property="og:description" content="I help organizations deliver high-quality software by combining technical expertise, project leadership, and practical problem-solving." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://swoyuj.github.io" />
-
-  <title>Swoyuj Bajracharya | Technical Project Manager & Full Stack Developer</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-	<!-- Microsoft Clarity -->
-	<script type="text/javascript">
-	(function(c,l,a,r,i,t,y){
-		c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-		t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-		y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-	})(window, document, "clarity", "script", "x4sno8x3e6");
-	</script>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQKSWYQJ6F"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		
-		gtag('config', 'G-FQKSWYQJ6F');
-	</script>
-</head>
-<body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-container">
-      <a href="#home" style=" width: 45px; height: 45px;" aria-label="Swoyuj Bajracharya – home">
-		<img src="android-chrome-192x192.png" alt="Swoyuj Bajracharya Logo">
-	  </a>
-
-      <ul class="nav-menu" id="nav-menu" role="list">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-          <span class="theme-icon" aria-hidden="true">☀️</span>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="home" aria-labelledby="hero-heading">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="hero-blob blob-1"></div>
-      <div class="hero-blob blob-2"></div>
-      <div class="hero-grid"></div>
-    </div>
-
-    <div class="container hero-container">
-      <div class="hero-content">
-        <p class="hero-eyebrow">Technical Project Manager · Senior Developer</p>
-        <h1 id="hero-heading" class="hero-name">Swoyuj <span class="accent">Bajracharya</span></h1>
-        <p class="hero-tagline">I help organizations stabilize messy systems, trace what’s breaking beneath the surface, and turn them into predictable, shippable software through deep technical understanding, hands-on leadership, and practical problem-solving.
-			<br/>
-			My focus is simple - understand it deeply, fix it properly, and make it stable, reliable, and built to last.
-		</p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Contact Me</a>
-        </div>
-
-        <div class="hero-stats" role="list" aria-label="Career highlights">
-          <div class="stat" role="listitem">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat" role="listitem">
-            <span class="stat-number">50+</span>
-            <span class="stat-label">Projects Delivered</span>
-          </div>
-          <div class="stat" role="listitem">
-            <span class="stat-number">100+</span>
-            <span class="stat-label">Remote Meetings</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="avatar-wrapper">
-          <div class="avatar-ring"></div>
-          <div class="avatar-placeholder">
-			<img src="profileImage.png" alt="Swoyuj Bajracharya">
-          </div>
-          <div class="avatar-badge">
-            <span>Available for Remote Work</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section about" id="about" aria-labelledby="about-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-eyebrow">Who I Am</p>
-        <h2 id="about-heading" class="section-title">About Me</h2>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-intro reveal">
-          <p class="about-lead">Full Stack Developer and Project Manager with 10+ years delivering scalable software and leading teams across diverse business domains.</p>
-          <p class="about-body">My career spans the full arc of software delivery — from writing production code to owning project outcomes as a technical PM. I've worked on enterprise systems, API platforms, and data-heavy systems, always bringing both a developer's precision and a PM's accountability to the table.</p>
-          <p class="about-body">I focus on understanding the system deeply, analyzing gaps, asking the right questions, and bringing structure before execution begins. This helps turn unclear inputs into well-defined work that teams can confidently deliver.</p>
-		  <p class="about-body">I work best where clarity, ownership, and execution need to come together. I stay close to both the technical details and delivery flow to ensure decisions are grounded, aligned across stakeholders, and effectively translated into actionable outcomes.</p>
-        </div>
-
-        <div class="about-cards">
-          <div class="about-card reveal">
-            <div class="about-card-icon" aria-hidden="true">🧩</div>
-            <h3>Full Stack Engineering Depth</h3>
-            <p>10+ years building and maintaining enterprise-grade applications using .NET, REST APIs, and SQL-based systems. Comfortable working across backend, frontend, and database layers with a strong focus on performance and maintainability. I still read the code, not just the reports.</p>
-          </div>
-          <div class="about-card reveal">
-            <div class="about-card-icon" aria-hidden="true">📋</div>
-            <h3>Delivery Ownership in Distributed Teams</h3>
-            <p>Owns delivery from planning to release, managing backlogs, risks, and sprint execution with a strong focus on outcomes. Works effectively with distributed teams across time zones, keeping communication clear, structured, and aligned.</p> 
-			<p>I run Agile processes that actually work, not just ceremonies that waste time. </p>
-          </div>
-          <div class="about-card reveal">
-            <div class="about-card-icon" aria-hidden="true">🎯</div>
-            <h3>Practical Decision Making</h3>
-            <p>I analyze problems from multiple angles, gather evidence, validate assumptions through data and discussion, and then evaluate trade-offs before making decisions. Focus on clarity, proof, and real-world impact rather than assumptions or intuition alone.</p>
-          </div>
-          <div class="about-card reveal">
-            <div class="about-card-icon" aria-hidden="true">🔍</div>
-            <h3>Debugging Discipline</h3>
-            <p>Known for quickly diagnosing production issues and complex bugs. I use a structured, step-by-step approach to troubleshooting by analyzing logs, system behavior, and validating assumptions to reach root cause efficiently.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-interests reveal">
-        <h3 class="interests-title">Open to opportunities in:</h3>
-        <div class="interests-list" role="list">
-          <span role="listitem">Technical Project Management</span>
-          <span role="listitem">Full Stack Developer</span>
-          <span role="listitem">Engineering Leadership</span>
-          <span role="listitem">Remote Opportunities</span>
-          <span role="listitem">International Collaboration</span>
-		  <span role="listitem">Consulting / Contract Software Delivery</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section skills" id="skills" aria-labelledby="skills-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-eyebrow">What I Work With</p>
-        <h2 id="skills-heading" class="section-title">Skills</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-category reveal">
-          <div class="skill-category-header">
-            <span class="skill-category-icon" aria-hidden="true">💻</span>
-            <h3>Software Development</h3>
-          </div>
-          <div class="skill-badges" role="list" aria-label="Software development skills">
-            <span class="badge" role="listitem">C#</span>
-            <span class="badge" role="listitem">ASP.NET Core</span>
-            <span class="badge" role="listitem">ASP.NET MVC</span>
-            <span class="badge" role="listitem">ASP.NET Web Forms</span>
-            <span class="badge" role="listitem">REST APIs</span>
-            <span class="badge" role="listitem">Entity Framework</span>
-            <span class="badge" role="listitem">SQL Server</span>
-            <span class="badge" role="listitem">MySQL</span>
-            <span class="badge" role="listitem">JavaScript</span>
-            <span class="badge" role="listitem">jQuery</span>
-            <span class="badge" role="listitem">AngularJS</span>
-          </div>
-        </div>
-
-        <div class="skill-category reveal">
-          <div class="skill-category-header">
-            <span class="skill-category-icon" aria-hidden="true">📊</span>
-            <h3>Project Management</h3>
-          </div>
-          <div class="skill-badges" role="list" aria-label="Project management skills">
-            <span class="badge badge-accent" role="listitem">Agile</span>
-            <span class="badge badge-accent" role="listitem">Scrum</span>
-            <span class="badge badge-accent" role="listitem">Backlog Management</span>
-            <span class="badge badge-accent" role="listitem">Stakeholder Communication</span>
-            <span class="badge badge-accent" role="listitem">Risk Management</span>
-            <span class="badge badge-accent" role="listitem">Sprint Planning</span>
-            <span class="badge badge-accent" role="listitem">Requirement Analysis</span>
-            <span class="badge badge-accent" role="listitem">Team Coordination</span>
-          </div>
-        </div>
-
-        <div class="skill-category reveal">
-          <div class="skill-category-header">
-            <span class="skill-category-icon" aria-hidden="true">🛠️</span>
-            <h3>Tools</h3>
-          </div>
-          <div class="skill-badges" role="list" aria-label="Development tools">
-            <span class="badge badge-muted" role="listitem">Git</span>
-            <span class="badge badge-muted" role="listitem">SVN</span>
-            <span class="badge badge-muted" role="listitem">CI/CD (Jenkins)</span>
-            <span class="badge badge-muted" role="listitem">Project Management Tool</span>
-            <span class="badge badge-muted" role="listitem">Visual Studio</span>
-            <span class="badge badge-muted" role="listitem">Postman</span>
-            <span class="badge badge-muted" role="listitem">SQL Server Management Studio</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section experience" id="experience" aria-labelledby="experience-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-eyebrow">Career History</p>
-        <h2 id="experience-heading" class="section-title">Experience</h2>
-      </div>
-	<div class="timeline" role="list">
-	  <div class="timeline-item reveal" role="listitem">
-		<div class="timeline-marker" aria-hidden="true"></div>
-		<div class="timeline-card">
-		  <div class="timeline-meta">
-			<span class="timeline-period">Jun 2023 – Present</span>
-			<span class="timeline-type">Project Manager</span>
-		  </div>
-		  <h3 class="timeline-role">Project Manager</h3>
-		  <p class="timeline-company">Percoid IT Solutions</p>
-		  <ul class="timeline-points">
-			<li>Transitioned from software engineering into project management, bringing strong technical grounding into delivery decisions and requirement analysis.</li>
-			<li>Review and refine business requirements and tickets before development, identifying ambiguities and providing effort estimates to reduce rework and delays.</li>
-			<li>Lead a cross-functional team of 16 developers and 7 QA engineers across full project delivery cycles.</li>
-			<li>Own sprint planning, backlog prioritization, resource allocation, and risk management to ensure predictable delivery within scope and quality constraints.</li>
-			<li>Facilitate stakeholder and planning discussions to align technical teams with business goals and clarify requirements early.</li>
-			<li>Implemented Kanban-based workflow visibility to improve delivery tracking, reduce bottlenecks, and optimize team throughput.</li>
-		  </ul>
-		</div>
-	  </div>
-
-	  <div class="timeline-item reveal" role="listitem">
-		<div class="timeline-marker" aria-hidden="true"></div>
-		<div class="timeline-card">
-		  <div class="timeline-meta">
-			<span class="timeline-period">Oct 2022 – Jun 2023</span>
-			<span class="timeline-type">Product Owner</span>
-		  </div>
-		  <h3 class="timeline-role">Product Owner</h3>
-		  <p class="timeline-company">Percoid IT Solutions</p>
-		  <ul class="timeline-points">
-			<li>Defined and managed product backlog to ensure development focus remained on high-value deliverables.</li>
-			<li>Improved sprint delivery efficiency by refining backlog grooming and Agile practices.</li>
-			<li>Translated business needs into clear user stories with defined acceptance criteria to reduce ambiguity and rework.</li>
-			<li>Incorporated user feedback into product iterations to improve feature quality and customer satisfaction.</li>
-		  </ul>
-		</div>
-	  </div>
-
-	  <div class="timeline-item reveal" role="listitem">
-		<div class="timeline-marker" aria-hidden="true"></div>
-		<div class="timeline-card">
-		  <div class="timeline-meta">
-			<span class="timeline-period">Nov 2017 – Nov 2022</span>
-			<span class="timeline-type">Software Engineer</span>
-		  </div>
-		  <h3 class="timeline-role">Software Engineer</h3>
-		  <p class="timeline-company">Percoid IT Solutions</p>
-		  <ul class="timeline-points">
-			<li>Developed and integrated REST APIs for system-to-system communication and backend services.</li>
-			<li>Designed and optimized MS SQL Server databases to improve query performance and system efficiency.</li>
-			<li>Built maintainable front-end and back-end components using clean coding practices.</li>
-			<li>Collaborated with project managers and teams to translate requirements into scalable technical solutions.</li>
-		  </ul>
-		</div>
-	  </div>
-
-	  <div class="timeline-item reveal" role="listitem">
-		<div class="timeline-marker" aria-hidden="true"></div>
-		<div class="timeline-card">
-		  <div class="timeline-meta">
-			<span class="timeline-period">Apr 2017 – Oct 2017</span>
-			<span class="timeline-type">Dot Net Developer</span>
-		  </div>
-		  <h3 class="timeline-role">Dot Net Developer</h3>
-		  <p class="timeline-company">Softech Foundation Pvt. Ltd.</p>
-		  <ul class="timeline-points">
-			<li>Developed full-cycle software applications using C#, JavaScript, and SQL.</li>
-			<li>Contributed to planning, scheduling, and delivery of small-to-mid scale projects.</li>
-		  </ul>
-		</div>
-	  </div>
-
-	  <div class="timeline-item reveal" role="listitem">
-		<div class="timeline-marker" aria-hidden="true"></div>
-		<div class="timeline-card">
-		  <div class="timeline-meta">
-			<span class="timeline-period">Nov 2016 – Mar 2017</span>
-			<span class="timeline-type">Dot Net Developer</span>
-		  </div>
-		  <h3 class="timeline-role">Dot Net Developer</h3>
-		  <p class="timeline-company">EyeWeb Sys Pvt. Ltd.</p>
-		  <ul class="timeline-points">
-			<li>Developed and maintained web applications using Umbraco CMS, C#, and SQL.</li>
-			<li>Improved system stability by resolving critical bugs and performance issues.</li>
-			<li>Participated in code reviews and ensured delivery quality standards were met.</li>
-		  </ul>
-		</div>
-	  </div>
-
-	  <div class="timeline-item reveal" role="listitem">
-		<div class="timeline-marker" aria-hidden="true"></div>
-		<div class="timeline-card">
-		  <div class="timeline-meta">
-			<span class="timeline-period">Apr 2015 – May 2016</span>
-			<span class="timeline-type">Software Engineer</span>
-		  </div>
-		  <h3 class="timeline-role">Software Engineer</h3>
-		  <p class="timeline-company">Deerwalk Services Pvt. Ltd.</p>
-		  <ul class="timeline-points">
-			<li>Built features using C#, JavaScript, and SQL following established engineering standards.</li>
-			<li>Improved existing systems by enhancing performance, scalability, and maintainability.</li>
-			<li>Contributed to estimation, planning, and task breakdown during project execution.</li>
-		  </ul>
-		</div>
-	  </div>
-
-	  <div class="timeline-item reveal" role="listitem">
-		<div class="timeline-marker" aria-hidden="true"></div>
-		<div class="timeline-card">
-		  <div class="timeline-meta">
-			<span class="timeline-period">Nov 2013 – Feb 2015</span>
-			<span class="timeline-type">Trainee → Junior Developer</span>
-		  </div>
-		  <h3 class="timeline-role">Junior Software Developer</h3>
-		  <p class="timeline-company">PROCIT BV (IT Himalaya Pvt. Ltd.)</p>
-		  <ul class="timeline-points">
-			<li>Assisted in development, testing, and debugging under senior developer guidance.</li>
-			<li>Contributed to feature development and bug fixes using Git and SVN workflows.</li>
-			<li>Worked closely with teams to understand requirements and deliver assigned tasks on time.</li>
-		  </ul>
-		</div>
-	  </div>
-
-	</div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <!-- <section class="section projects" id="projects" aria-labelledby="projects-heading"> -->
-    <!-- <div class="container"> -->
-      <!-- <div class="section-header reveal"> -->
-        <!-- <p class="section-eyebrow">Selected Work</p> -->
-        <!-- <h2 id="projects-heading" class="section-title">Featured Projects</h2> -->
-      <!-- </div> -->
-
-      <!-- <div class="projects-grid"> -->
-
-        <!-- <article class="project-card reveal" aria-label="Enterprise Resource Management System project"> -->
-          <!-- <div class="project-card-top"> -->
-            <!-- <div class="project-icon" aria-hidden="true">🏢</div> -->
-            <!-- <h3 class="project-title">Enterprise Resource Management System</h3> -->
-            <!-- <p class="project-desc">Large-scale enterprise application supporting end-to-end business operations including HR workflows, reporting, and resource allocation across departments.</p> -->
-          <!-- </div> -->
-          <!-- <div class="project-card-bottom"> -->
-            <!-- <div class="project-tech" aria-label="Technologies used"> -->
-              <!-- <span>ASP.NET Core</span><span>SQL Server</span><span>REST APIs</span> -->
-            <!-- </div> -->
-            <!-- <p class="project-impact"><strong>Impact:</strong> Improved operational efficiency across business units by centralizing data and automating key workflows.</p> -->
-            <!-- <div class="project-links"> -->
-              <!-- <a href="#" class="project-link" aria-label="View source code on GitHub (placeholder)">GitHub</a> -->
-              <!-- <a href="#" class="project-link project-link-demo" aria-label="View live demo (placeholder)">Live Demo</a> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        <!-- </article> -->
-
-        <!-- <article class="project-card reveal" aria-label="Project Management Dashboard project"> -->
-          <!-- <div class="project-card-top"> -->
-            <!-- <div class="project-icon" aria-hidden="true">📈</div> -->
-            <!-- <h3 class="project-title">Project Management Dashboard</h3> -->
-            <!-- <p class="project-desc">Real-time project tracking and reporting platform giving PMs and stakeholders visibility into sprint progress, blockers, and delivery forecasts.</p> -->
-          <!-- </div> -->
-          <!-- <div class="project-card-bottom"> -->
-            <!-- <div class="project-tech" aria-label="Technologies used"> -->
-              <!-- <span>ASP.NET MVC</span><span>JavaScript</span><span>SQL Server</span> -->
-            <!-- </div> -->
-            <!-- <p class="project-impact"><strong>Impact:</strong> Improved project visibility and reduced status-reporting overhead for cross-functional teams.</p> -->
-            <!-- <div class="project-links"> -->
-              <!-- <a href="#" class="project-link">GitHub</a> -->
-              <!-- <a href="#" class="project-link project-link-demo">Live Demo</a> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        <!-- </article> -->
-
-        <!-- <article class="project-card reveal" aria-label="Automated Billing Platform project"> -->
-          <!-- <div class="project-card-top"> -->
-            <!-- <div class="project-icon" aria-hidden="true">💳</div> -->
-            <!-- <h3 class="project-title">Automated Billing Platform</h3> -->
-            <!-- <p class="project-desc">Billing and invoice generation system with automated scheduling, client-specific pricing rules, and PDF export capabilities.</p> -->
-          <!-- </div> -->
-          <!-- <div class="project-card-bottom"> -->
-            <!-- <div class="project-tech" aria-label="Technologies used"> -->
-              <!-- <span>C#</span><span>Entity Framework</span><span>SQL Server</span> -->
-            <!-- </div> -->
-            <!-- <p class="project-impact"><strong>Impact:</strong> Eliminated manual billing processes and reduced invoice generation time significantly.</p> -->
-            <!-- <div class="project-links"> -->
-              <!-- <a href="#" class="project-link">GitHub</a> -->
-              <!-- <a href="#" class="project-link project-link-demo">Live Demo</a> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        <!-- </article> -->
-
-        <!-- <article class="project-card reveal" aria-label="API Integration Hub project"> -->
-          <!-- <div class="project-card-top"> -->
-            <!-- <div class="project-icon" aria-hidden="true">🔗</div> -->
-            <!-- <h3 class="project-title">API Integration Hub</h3> -->
-            <!-- <p class="project-desc">Middleware platform integrating multiple external services including payment gateways, CRM systems, and third-party data providers through a unified API layer.</p> -->
-          <!-- </div> -->
-          <!-- <div class="project-card-bottom"> -->
-            <!-- <div class="project-tech" aria-label="Technologies used"> -->
-              <!-- <span>Web API</span><span>ASP.NET Core</span><span>OAuth</span> -->
-            <!-- </div> -->
-            <!-- <p class="project-impact"><strong>Impact:</strong> Improved system interoperability and reduced integration time for new service connections.</p> -->
-            <!-- <div class="project-links"> -->
-              <!-- <a href="#" class="project-link">GitHub</a> -->
-              <!-- <a href="#" class="project-link project-link-demo">Live Demo</a> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        <!-- </article> -->
-
-        <!-- <article class="project-card reveal" aria-label="GIS Mapping Application project"> -->
-          <!-- <div class="project-card-top"> -->
-            <!-- <div class="project-icon" aria-hidden="true">🗺️</div> -->
-            <!-- <h3 class="project-title">GIS Mapping Application</h3> -->
-            <!-- <p class="project-desc">Location intelligence and mapping platform enabling spatial data visualization, route analysis, and region-based reporting for operational planning.</p> -->
-          <!-- </div> -->
-          <!-- <div class="project-card-bottom"> -->
-            <!-- <div class="project-tech" aria-label="Technologies used"> -->
-              <!-- <span>Leaflet</span><span>JavaScript</span><span>ASP.NET</span> -->
-            <!-- </div> -->
-            <!-- <p class="project-impact"><strong>Impact:</strong> Enhanced spatial analysis capabilities and reduced manual mapping work for field operations teams.</p> -->
-            <!-- <div class="project-links"> -->
-              <!-- <a href="#" class="project-link">GitHub</a> -->
-              <!-- <a href="#" class="project-link project-link-demo">Live Demo</a> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        <!-- </article> -->
-
-        <!-- <article class="project-card reveal" aria-label="Business Process Automation Tool project"> -->
-          <!-- <div class="project-card-top"> -->
-            <!-- <div class="project-icon" aria-hidden="true">⚙️</div> -->
-            <!-- <h3 class="project-title">Business Process Automation Tool</h3> -->
-            <!-- <p class="project-desc">Workflow automation platform that digitized and automated multi-step approval chains, document routing, and recurring task management.</p> -->
-          <!-- </div> -->
-          <!-- <div class="project-card-bottom"> -->
-            <!-- <div class="project-tech" aria-label="Technologies used"> -->
-              <!-- <span>C#</span><span>SQL Server</span><span>JavaScript</span> -->
-            <!-- </div> -->
-            <!-- <p class="project-impact"><strong>Impact:</strong> Reduced operational workload on admin teams and eliminated bottlenecks in approval workflows.</p> -->
-            <!-- <div class="project-links"> -->
-              <!-- <a href="#" class="project-link">GitHub</a> -->
-              <!-- <a href="#" class="project-link project-link-demo">Live Demo</a> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        <!-- </article> -->
-
-      <!-- </div> -->
-    <!-- </div> -->
-  <!-- </section> -->
-
-  <!-- WHY WORK WITH ME -->
-  <section class="section why" id="why" aria-labelledby="why-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-eyebrow">What You Get</p>
-        <h2 id="why-heading" class="section-title">Why Work With Me</h2>
-      </div>
-
-      <div class="why-grid">
-        <div class="why-card reveal">
-          <div class="why-icon" aria-hidden="true">🔍</div>
-          <h3>Strong Problem Solving</h3>
-          <p>I dig into issues systematically. No guessing, no rushing to quick fixes that hide the real cause. I find the root and fix it properly.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon" aria-hidden="true">⚡</div>
-          <h3>Fast Requirement Understanding</h3>
-          <p>I ask the right questions upfront and get to the core of what a feature needs to do. Less back-and-forth, faster delivery.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon" aria-hidden="true">✍️</div>
-          <h3>Clean Maintainable Code</h3>
-          <p>Code I write is readable, structured, and built to last. The next developer on the project should not need to call me to understand it.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon" aria-hidden="true">🎯</div>
-          <h3>Technical Leadership</h3>
-          <p>I can lead a team technically without creating dependency. I mentor, document, and build team capability as the project moves forward.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon" aria-hidden="true">✅</div>
-          <h3>Reliable Delivery</h3>
-          <p>I take delivery seriously. I flag risks early, manage scope clearly, and do not overpromise. What I commit to, I ship.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon" aria-hidden="true">💬</div>
-          <h3>Effective Communication</h3>
-          <p>I translate technical complexity into clear business language. Stakeholders stay informed without needing to understand every implementation detail.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact" id="contact" aria-labelledby="contact-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-eyebrow">Get in Touch</p>
-        <h2 id="contact-heading" class="section-title">Contact</h2>
-      </div>
-
-      <div class="contact-layout">
-
-        <div class="contact-info reveal">
-          <p class="contact-intro">If you have a project, a position, or an idea worth discussing, I'm open to the conversation. I respond to every serious inquiry.</p>
-
-          <div class="contact-details">
-            <a href="mailto:your.email@example.com" class="contact-item" aria-label="Send email">
-              <span class="contact-item-icon" aria-hidden="true">✉️</span>
-              <div>
-                <span class="contact-item-label">Email</span>
-                <span class="contact-item-value">swoyujbajracharya@gmail.com</span>
-              </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Swoyuj Bajracharya – Technical Project Manager and Senior Full Stack Developer with 10+ years of experience delivering scalable software and leading cross-functional teams." />
+      <meta name="keywords" content="Swoyuj Bajracharya, Technical Project Manager, Full Stack Developer, ASP.NET, C#, SQL Server, Agile, Scrum, Nepal" />
+      <meta name="author" content="Swoyuj Bajracharya" />
+      <!-- Open Graph -->
+      <meta property="og:title" content="Swoyuj Bajracharya | Technical Project Manager & Full Stack Developer" />
+      <meta property="og:description" content="I help organizations deliver high-quality software by combining technical expertise, project leadership, and practical problem-solving." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://swoyuj.github.io" />
+      <title>Swoyuj Bajracharya | Technical Project Manager & Full Stack Developer</title>
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   </head>
+   <body>
+      <!-- NAVIGATION -->
+      <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+         <div class="nav-container">
+            <a href="#home" style=" width: 45px; height: 45px;" aria-label="Swoyuj Bajracharya – home">
+            <img src="android-chrome-192x192.png" alt="Swoyuj Bajracharya Logo">
             </a>
-            <a href="https://www.linkedin.com/in/swoyuj-bajracharya/" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn profile (opens in new tab)">
-              <span class="contact-item-icon" aria-hidden="true">💼</span>
-              <div>
-                <span class="contact-item-label">LinkedIn</span>
-                <span class="contact-item-value">https://www.linkedin.com/in/swoyuj-bajracharya/</span>
-              </div>
-            </a>
-            <a href="https://github.com/swoyuj" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="GitHub profile (opens in new tab)">
-              <span class="contact-item-icon" aria-hidden="true">🐙</span>
-              <div>
-                <span class="contact-item-label">GitHub</span>
-                <span class="contact-item-value">github.com/swoyuj</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-	<form class="contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST">      
-		<input type="hidden" name="access_key" value="27b1bf09-0f19-4155-a2f4-694af4c6c0be">
-		<input type="hidden" name="subject" value="New Portfolio Contact Message">
-		<input type="hidden" name="from_name" value="Portfolio Website">
-		<input type="checkbox" name="botcheck" style="display:none;">
-		<div class="form-group">
-            <label for="name">Name <span aria-hidden="true">*</span></label>
-            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" aria-required="true" />
-            <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="form-group">
-            <label for="email">Email <span aria-hidden="true">*</span></label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-required="true" />
-            <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject <span aria-hidden="true">*</span></label>
-            <input type="text" id="subject" name="subject" placeholder="What is this about?" required aria-required="true" />
-            <span class="form-error" id="subject-error" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="form-group">
-            <label for="message">Message <span aria-hidden="true">*</span></label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..." required aria-required="true"></textarea>
-            <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send Message</button>
-          <div class="form-success" id="form-success" role="alert" aria-live="polite" aria-hidden="true">
-            Message received. I will be in touch shortly.
-          </div>
-        </form>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">		
-		  <a href="#home" style="width: 100px;height: 100px;display: flex;">
-			<img src="android-chrome-192x192.png" alt="Swoyuj Bajracharya Logo">
-		  </a>
-          <p>Technical Project Manager and Senior Full Stack Developer based in Kathmandu, Nepal. Open to remote opportunities worldwide.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <nav aria-label="Footer navigation">
-            <ul role="list">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <ul class="nav-menu" id="nav-menu" role="list">
+               <li><a href="#home" class="nav-link active">Home</a></li>
+               <li><a href="#about" class="nav-link">About</a></li>
+               <li><a href="#skills" class="nav-link">Skills</a></li>
+               <li><a href="#why" class="nav-link">Why Me?</a></li>
+               <li><a href="#experience" class="nav-link">Experience</a></li>
+               <li><a href="#projects" class="nav-link">Projects</a></li>
+               <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-          </nav>
-        </div>
-        <div class="footer-social">
-          <h4>Connect</h4>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/swoyuj-bajracharya/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-            <a href="https://github.com/swoyuj" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-            <a href="mailto:swoyujbajracharya@gmail.com" aria-label="Email">Email</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-		  <p>© <span id="year"></span> Swoyuj Bajracharya. All Rights Reserved.</p>
-		</div>
-    </div>
-  </footer>
-
-  <!-- BACK TO TOP -->
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-
-  <script src="script.js"></script>
-</body>
+            <div class="nav-actions">
+               <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+               <span class="theme-icon" aria-hidden="true">☀️</span>
+               </button>
+               <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+               <span></span><span></span><span></span>
+               </button>
+            </div>
+         </div>
+      </nav>
+      <!-- HERO -->
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+         <div class="hero-bg" aria-hidden="true">
+            <div class="hero-blob blob-1"></div>
+            <div class="hero-blob blob-2"></div>
+            <div class="hero-grid"></div>
+         </div>
+         <div class="container hero-container">
+            <div class="hero-content">
+               <p class="hero-eyebrow">Technical Project Manager · Senior Developer</p>
+               <h1 id="hero-heading" class="hero-name">Swoyuj <span class="accent">Bajracharya</span></h1>
+               <p class="hero-tagline">I help organizations stabilize messy systems, trace what’s breaking beneath the surface, and turn them into predictable, shippable software through deep technical understanding, hands-on leadership, and practical problem-solving.
+                  <br/>
+                  My focus is simple - understand it deeply, fix it properly, and make it stable, reliable, and built to last.
+               </p>
+               <div class="hero-actions">
+                  <a href="#projects" class="btn btn-primary">View Projects</a>
+                  <a href="#contact" class="btn btn-secondary">Contact Me</a>
+               </div>
+               <div class="hero-stats" role="list" aria-label="Career highlights">
+                  <div class="stat" role="listitem">
+                     <span class="stat-number">10+</span>
+                     <span class="stat-label">Years Experience</span>
+                  </div>
+                  <div class="stat" role="listitem">
+                     <span class="stat-number">50+</span>
+                     <span class="stat-label">Projects Delivered</span>
+                  </div>
+                  <div class="stat" role="listitem">
+                     <span class="stat-number">100+</span>
+                     <span class="stat-label">Remote Meetings</span>
+                  </div>
+               </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+               <div class="avatar-wrapper">
+                  <div class="avatar-ring"></div>
+                  <div class="avatar-placeholder">
+                     <img src="profileImage.png" alt="Swoyuj Bajracharya">
+                  </div>
+                  <div class="avatar-badge">
+                     <span>Available for Remote Work</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="section about" id="about" aria-labelledby="about-heading">
+         <div class="container">
+            <div class="section-header reveal">
+               <p class="section-eyebrow">Who I Am</p>
+               <h2 id="about-heading" class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+               <div class="about-intro reveal">
+                  <p class="about-lead">Full Stack Developer and Project Manager with 10+ years delivering scalable software and leading teams across diverse business domains.</p>
+                  <p class="about-body">My career spans the full arc of software delivery — from writing production code to owning project outcomes as a technical PM. I've worked on enterprise systems, API platforms, and data-heavy systems, always bringing both a developer's precision and a PM's accountability to the table.</p>
+                  <p class="about-body">I focus on understanding the system deeply, analyzing gaps, asking the right questions, and bringing structure before execution begins. This helps turn unclear inputs into well-defined work that teams can confidently deliver.</p>
+                  <p class="about-body">I work best where clarity, ownership, and execution need to come together. I stay close to both the technical details and delivery flow to ensure decisions are grounded, aligned across stakeholders, and effectively translated into actionable outcomes.</p>
+               </div>
+               <div class="about-cards">
+                  <div class="about-card reveal">
+                     <div class="about-card-icon" aria-hidden="true">🧩</div>
+                     <h3>Full Stack Engineering Depth</h3>
+                     <p>10+ years building and maintaining enterprise-grade applications using .NET, REST APIs, and SQL-based systems. Comfortable working across backend, frontend, and database layers with a strong focus on performance and maintainability. I still read the code, not just the reports.</p>
+                  </div>
+                  <div class="about-card reveal">
+                     <div class="about-card-icon" aria-hidden="true">📋</div>
+                     <h3>Delivery Ownership in Distributed Teams</h3>
+                     <p>Owns delivery from planning to release, managing backlogs, risks, and sprint execution with a strong focus on outcomes. Works effectively with distributed teams across time zones, keeping communication clear, structured, and aligned.</p>
+                     <p>I run Agile processes that actually work, not just ceremonies that waste time. </p>
+                  </div>
+                  <div class="about-card reveal">
+                     <div class="about-card-icon" aria-hidden="true">🎯</div>
+                     <h3>Practical Decision Making</h3>
+                     <p>I analyze problems from multiple angles, gather evidence, validate assumptions through data and discussion, and then evaluate trade-offs before making decisions. Focus on clarity, proof, and real-world impact rather than assumptions or intuition alone.</p>
+                  </div>
+                  <div class="about-card reveal">
+                     <div class="about-card-icon" aria-hidden="true">🔍</div>
+                     <h3>Debugging Discipline</h3>
+                     <p>Known for quickly diagnosing production issues and complex bugs. I use a structured, step-by-step approach to troubleshooting by analyzing logs, system behavior, and validating assumptions to reach root cause efficiently.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="about-interests reveal">
+               <h3 class="interests-title">Open to opportunities in:</h3>
+               <div class="interests-list" role="list">
+                  <span role="listitem">Technical Project Management</span>
+                  <span role="listitem">Full Stack Developer</span>
+                  <span role="listitem">Engineering Leadership</span>
+                  <span role="listitem">Remote Opportunities</span>
+                  <span role="listitem">International Collaboration</span>
+                  <span role="listitem">Consulting / Contract Software Delivery</span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- SKILLS -->
+      <section class="section skills" id="skills" aria-labelledby="skills-heading">
+         <div class="container">
+            <div class="section-header reveal">
+               <p class="section-eyebrow">What I Work With</p>
+               <h2 id="skills-heading" class="section-title">Skills</h2>
+            </div>
+            <div class="skills-grid">
+               <div class="skill-category reveal">
+                  <div class="skill-category-header">
+                     <span class="skill-category-icon" aria-hidden="true">💻</span>
+                     <h3>Software Development</h3>
+                  </div>
+                  <div class="skill-badges" role="list" aria-label="Software development skills">
+                     <span class="badge" role="listitem">C#</span>
+                     <span class="badge" role="listitem">ASP.NET Core</span>
+                     <span class="badge" role="listitem">ASP.NET MVC</span>
+                     <span class="badge" role="listitem">ASP.NET Web Forms</span>
+                     <span class="badge" role="listitem">REST APIs</span>
+                     <span class="badge" role="listitem">Entity Framework</span>
+                     <span class="badge" role="listitem">SQL Server</span>
+                     <span class="badge" role="listitem">MySQL</span>
+                     <span class="badge" role="listitem">JavaScript</span>
+                     <span class="badge" role="listitem">jQuery</span>
+                     <span class="badge" role="listitem">AngularJS</span>
+                  </div>
+               </div>
+               <div class="skill-category reveal">
+                  <div class="skill-category-header">
+                     <span class="skill-category-icon" aria-hidden="true">📊</span>
+                     <h3>Project Management</h3>
+                  </div>
+                  <div class="skill-badges" role="list" aria-label="Project management skills">
+                     <span class="badge badge-accent" role="listitem">Agile</span>
+                     <span class="badge badge-accent" role="listitem">Scrum</span>
+                     <span class="badge badge-accent" role="listitem">Backlog Management</span>
+                     <span class="badge badge-accent" role="listitem">Stakeholder Communication</span>
+                     <span class="badge badge-accent" role="listitem">Risk Management</span>
+                     <span class="badge badge-accent" role="listitem">Sprint Planning</span>
+                     <span class="badge badge-accent" role="listitem">Requirement Analysis</span>
+                     <span class="badge badge-accent" role="listitem">Team Coordination</span>
+                  </div>
+               </div>
+               <div class="skill-category reveal">
+                  <div class="skill-category-header">
+                     <span class="skill-category-icon" aria-hidden="true">🛠️</span>
+                     <h3>Tools</h3>
+                  </div>
+                  <div class="skill-badges" role="list" aria-label="Development tools">
+                     <span class="badge badge-muted" role="listitem">Git</span>
+                     <span class="badge badge-muted" role="listitem">SVN</span>
+                     <span class="badge badge-muted" role="listitem">CI/CD (Jenkins)</span>
+                     <span class="badge badge-muted" role="listitem">Project Management Tool</span>
+                     <span class="badge badge-muted" role="listitem">Visual Studio</span>
+                     <span class="badge badge-muted" role="listitem">Postman</span>
+                     <span class="badge badge-muted" role="listitem">SQL Server Management Studio</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WHY WORK WITH ME -->
+      <section class="section why" id="why" aria-labelledby="why-heading">
+         <div class="container">
+            <div class="section-header reveal">
+               <p class="section-eyebrow">What You Get</p>
+               <h2 id="why-heading" class="section-title">Why Work With Me</h2>
+            </div>
+            <div class="why-grid">
+               <div class="why-card reveal">
+                  <div class="why-icon" aria-hidden="true">🔍</div>
+                  <h3>Strong Problem Solving</h3>
+                  <p>I dig into issues systematically. No guessing, no rushing to quick fixes that hide the real cause. I find the root and fix it properly.</p>
+               </div>
+               <div class="why-card reveal">
+                  <div class="why-icon" aria-hidden="true">⚡</div>
+                  <h3>Fast Requirement Understanding</h3>
+                  <p>I ask the right questions upfront and get to the core of what a feature needs to do. Less back-and-forth, faster delivery.</p>
+               </div>
+               <div class="why-card reveal">
+                  <div class="why-icon" aria-hidden="true">✍️</div>
+                  <h3>Clean Maintainable Code</h3>
+                  <p>Code I write is readable, structured, and built to last. The next developer on the project should not need to call me to understand it.</p>
+               </div>
+               <div class="why-card reveal">
+                  <div class="why-icon" aria-hidden="true">🎯</div>
+                  <h3>Technical Leadership</h3>
+                  <p>I can lead a team technically without creating dependency. I mentor, document, and build team capability as the project moves forward.</p>
+               </div>
+               <div class="why-card reveal">
+                  <div class="why-icon" aria-hidden="true">✅</div>
+                  <h3>Reliable Delivery</h3>
+                  <p>I take delivery seriously. I flag risks early, manage scope clearly, and do not overpromise. What I commit to, I ship.</p>
+               </div>
+               <div class="why-card reveal">
+                  <div class="why-icon" aria-hidden="true">💬</div>
+                  <h3>Effective Communication</h3>
+                  <p>I translate technical complexity into clear business language. Stakeholders stay informed without needing to understand every implementation detail.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- EXPERIENCE -->
+      <section class="section experience" id="experience" aria-labelledby="experience-heading">
+         <div class="container">
+            <div class="section-header reveal">
+               <p class="section-eyebrow">Career History</p>
+               <h2 id="experience-heading" class="section-title">Experience</h2>
+            </div>
+            <div class="timeline" role="list">
+               <div class="timeline-item reveal" role="listitem">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-card">
+                     <div class="timeline-meta">
+                        <span class="timeline-period">Jun 2023 – Present</span>
+                        <span class="timeline-type">Project Manager</span>
+                     </div>
+                     <h3 class="timeline-role">Project Manager</h3>
+                     <p class="timeline-company">Percoid IT Solutions</p>
+                     <ul class="timeline-points">
+                        <li>Transitioned from software engineering into project management, bringing strong technical grounding into delivery decisions and requirement analysis.</li>
+                        <li>Review and refine business requirements and tickets before development, identifying ambiguities and providing effort estimates to reduce rework and delays.</li>
+                        <li>Lead a cross-functional team of 16 developers and 7 QA engineers across full project delivery cycles.</li>
+                        <li>Own sprint planning, backlog prioritization, resource allocation, and risk management to ensure predictable delivery within scope and quality constraints.</li>
+                        <li>Facilitate stakeholder and planning discussions to align technical teams with business goals and clarify requirements early.</li>
+                        <li>Implemented Kanban-based workflow visibility to improve delivery tracking, reduce bottlenecks, and optimize team throughput.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="timeline-item reveal" role="listitem">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-card">
+                     <div class="timeline-meta">
+                        <span class="timeline-period">Oct 2022 – Jun 2023</span>
+                        <span class="timeline-type">Product Owner</span>
+                     </div>
+                     <h3 class="timeline-role">Product Owner</h3>
+                     <p class="timeline-company">Percoid IT Solutions</p>
+                     <ul class="timeline-points">
+                        <li>Defined and managed product backlog to ensure development focus remained on high-value deliverables.</li>
+                        <li>Improved sprint delivery efficiency by refining backlog grooming and Agile practices.</li>
+                        <li>Translated business needs into clear user stories with defined acceptance criteria to reduce ambiguity and rework.</li>
+                        <li>Incorporated user feedback into product iterations to improve feature quality and customer satisfaction.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="timeline-item reveal" role="listitem">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-card">
+                     <div class="timeline-meta">
+                        <span class="timeline-period">Nov 2017 – Nov 2022</span>
+                        <span class="timeline-type">Software Engineer</span>
+                     </div>
+                     <h3 class="timeline-role">Software Engineer</h3>
+                     <p class="timeline-company">Percoid IT Solutions</p>
+                     <ul class="timeline-points">
+                        <li>Developed and integrated REST APIs for system-to-system communication and backend services.</li>
+                        <li>Designed and optimized MS SQL Server databases to improve query performance and system efficiency.</li>
+                        <li>Built maintainable front-end and back-end components using clean coding practices.</li>
+                        <li>Collaborated with project managers and teams to translate requirements into scalable technical solutions.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="timeline-item reveal" role="listitem">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-card">
+                     <div class="timeline-meta">
+                        <span class="timeline-period">Apr 2017 – Oct 2017</span>
+                        <span class="timeline-type">Dot Net Developer</span>
+                     </div>
+                     <h3 class="timeline-role">Dot Net Developer</h3>
+                     <p class="timeline-company">Softech Foundation Pvt. Ltd.</p>
+                     <ul class="timeline-points">
+                        <li>Developed full-cycle software applications using C#, JavaScript, and SQL.</li>
+                        <li>Contributed to planning, scheduling, and delivery of small-to-mid scale projects.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="timeline-item reveal" role="listitem">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-card">
+                     <div class="timeline-meta">
+                        <span class="timeline-period">Nov 2016 – Mar 2017</span>
+                        <span class="timeline-type">Dot Net Developer</span>
+                     </div>
+                     <h3 class="timeline-role">Dot Net Developer</h3>
+                     <p class="timeline-company">EyeWeb Sys Pvt. Ltd.</p>
+                     <ul class="timeline-points">
+                        <li>Developed and maintained web applications using Umbraco CMS, C#, and SQL.</li>
+                        <li>Improved system stability by resolving critical bugs and performance issues.</li>
+                        <li>Participated in code reviews and ensured delivery quality standards were met.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="timeline-item reveal" role="listitem">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-card">
+                     <div class="timeline-meta">
+                        <span class="timeline-period">Apr 2015 – May 2016</span>
+                        <span class="timeline-type">Software Engineer</span>
+                     </div>
+                     <h3 class="timeline-role">Software Engineer</h3>
+                     <p class="timeline-company">Deerwalk Services Pvt. Ltd.</p>
+                     <ul class="timeline-points">
+                        <li>Built features using C#, JavaScript, and SQL following established engineering standards.</li>
+                        <li>Improved existing systems by enhancing performance, scalability, and maintainability.</li>
+                        <li>Contributed to estimation, planning, and task breakdown during project execution.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="timeline-item reveal" role="listitem">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-card">
+                     <div class="timeline-meta">
+                        <span class="timeline-period">Nov 2013 – Feb 2015</span>
+                        <span class="timeline-type">Trainee → Junior Developer</span>
+                     </div>
+                     <h3 class="timeline-role">Junior Software Developer</h3>
+                     <p class="timeline-company">PROCIT BV (IT Himalaya Pvt. Ltd.)</p>
+                     <ul class="timeline-points">
+                        <li>Assisted in development, testing, and debugging under senior developer guidance.</li>
+                        <li>Contributed to feature development and bug fixes using Git and SVN workflows.</li>
+                        <li>Worked closely with teams to understand requirements and deliver assigned tasks on time.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- PROJECTS -->
+      <section class="section projects" id="projects" aria-labelledby="projects-heading">
+         <div class="container">
+            <div class="section-header reveal">
+               <p class="section-eyebrow">Platforms I've Helped Build</p>
+               <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+               <p class="section-description">
+                  Enterprise platforms where I contributed across software development, performance optimization,
+                  technical analysis, production support, and delivery ownership.
+               </p>
+            </div>
+            <div class="projects-grid">
+               <!-- QUANTUM -->
+               <article class="project-card reveal">
+                  <div class="project-card-top">
+                     <div class="project-header">
+                        <div class="project-logo quantum">Q</div>
+                        <div class="project-title-wrap">
+                           <h3 class="project-title">Quantum</h3>
+                           <span class="project-subtitle">Media Management Platform</span>
+                        </div>
+                     </div>
+                     <p class="project-desc">
+                        A comprehensive media management platform used by outdoor advertising companies worldwide.
+                        It manages inventory, operations, sales, production workflows, accounting, reporting,
+                        digital delivery, CRM integrations, and programmatic advertising.
+                     </p>
+                  </div>
+                  <div class="project-card-bottom">
+                     <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>AngularJS</span>
+                        <span>SQL Server</span>
+                        <span>Leaflet</span>
+                        <span>REST APIs</span>
+                     </div>
+                     <div class="project-impact">
+                        <strong>Key Contributions</strong>
+                        <ul class="project-contributions">
+                           <li>• Developed and maintained backend services and REST APIs.</li>
+                           <li>• Built APIs for mobile Posting and POP workflows.</li>
+                           <li>• Built demographic mapping features using Google Places and Leaflet.</li>
+                           <li>• Refactored Entity Framework logic and migrated critical operations to Dapper.</li>
+                           <li>• Fixed async/sync issues affecting scalability and reliability.</li>
+                           <li>• Improved system performance through .NET code optimization.</li>
+                           <li>• Optimized SQL queries, stored procedures, and database performance.</li>
+                           <li>• Investigated production issues across application, database, and infrastructure layers.</li>
+                           <li>• Diagnosed performance bottlenecks, locking issues, and system instability.</li>
+                           <li>• Contributed to architecture discussions and solution design.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+               <!-- EQUINOX -->
+               <article class="project-card reveal">
+                  <div class="project-card-top">
+                     <div class="project-header">
+                        <div class="project-logo equinox">E</div>
+                        <div class="project-title-wrap">
+                           <h3 class="project-title">Equinox</h3>
+                           <span class="project-subtitle">Media Buying Platform</span>
+                        </div>
+                     </div>
+                     <p class="project-desc">
+                        An advanced media buying platform that helps agencies and media buyers discover inventory,
+                        plan campaigns, manage contracts, track financials, and generate reporting using a large OOH database.
+                     </p>
+                  </div>
+                  <div class="project-card-bottom">
+                     <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>AngularJS</span>
+                        <span>SQL Server</span>
+                        <span>REST APIs</span>
+                     </div>
+                     <div class="project-impact">
+                        <strong>Key Contributions</strong>
+                        <ul class="project-contributions">
+                           <li>• Contributed to backend development and platform enhancements.</li>
+                           <li>• Implemented business logic and REST API features.</li>
+                           <li>• Worked on feature delivery and production fixes in collaboration with the team.</li>
+                           <li>• Performed debugging and production issue analysis across services.</li>
+                           <li>• Supported performance improvements and system optimization efforts.</li>
+                           <li>• Assisted in maintaining platform stability, reliability, and ongoing maintenance.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+               <!-- QMAP -->
+               <article class="project-card reveal">
+                  <div class="project-card-top">
+                     <div class="project-header">
+                        <div class="project-logo qmap">QM</div>
+                        <div class="project-title-wrap">
+                           <h3 class="project-title">Quantum Map</h3>
+                           <span class="project-subtitle">Geospatial Intelligence Module</span>
+                        </div>
+                     </div>
+                     <p class="project-desc">
+                        A standalone geospatial module integrated with Quantum, enabling interactive map-based
+                        visualization and management of operational data with real-time synchronization.
+                     </p>
+                  </div>
+                  <div class="project-card-bottom">
+                     <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>AngularJS</span>
+                        <span>Leaflet</span>
+                        <span>Google Places</span>
+                        <span>SQL Server</span>
+                     </div>
+                     <div class="project-impact">
+                        <strong>Key Contributions</strong>
+                        <ul class="project-contributions">
+                           <li>• Took ownership after initial development and managed ongoing enhancements.</li>
+                           <li>• Implemented SVG-based marker system and improved map rendering logic.</li>
+                           <li>• Built interactive info boxes for mapped entities with contextual data.</li>
+                           <li>• Implemented filtering and search for map-based data discovery.</li>
+                           <li>• Integrated Google Places for enhanced geospatial accuracy.</li>
+                           <li>• Implemented shortest-distance calculations for location insights.</li>
+                           <li>• Worked on demographic mapping for audience-based analysis.</li>
+                           <li>• Optimized marker rendering and overall map performance.</li>
+                           <li>• Improved navigation and redirection between map and core system.</li>
+                           <li>• Guided team on real-time add/update/remove directly from map.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="section contact" id="contact" aria-labelledby="contact-heading">
+         <div class="container">
+            <div class="section-header reveal">
+               <p class="section-eyebrow">Get in Touch</p>
+               <h2 id="contact-heading" class="section-title">Contact</h2>
+            </div>
+            <div class="contact-layout">
+               <div class="contact-info reveal">
+                  <p class="contact-intro">If you have a project, a position, or an idea worth discussing, I'm open to the conversation. I respond to every serious inquiry.</p>
+                  <div class="contact-details">
+                     <a href="mailto:your.email@example.com" class="contact-item" aria-label="Send email">
+                        <span class="contact-item-icon" aria-hidden="true">✉️</span>
+                        <div>
+                           <span class="contact-item-label">Email</span>
+                           <span class="contact-item-value">swoyujbajracharya@gmail.com</span>
+                        </div>
+                     </a>
+                     <a href="https://www.linkedin.com/in/swoyuj-bajracharya/" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn profile (opens in new tab)">
+                        <span class="contact-item-icon" aria-hidden="true">💼</span>
+                        <div>
+                           <span class="contact-item-label">LinkedIn</span>
+                           <span class="contact-item-value">https://www.linkedin.com/in/swoyuj-bajracharya/</span>
+                        </div>
+                     </a>
+                     <a href="https://github.com/swoyuj" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="GitHub profile (opens in new tab)">
+                        <span class="contact-item-icon" aria-hidden="true">🐙</span>
+                        <div>
+                           <span class="contact-item-label">GitHub</span>
+                           <span class="contact-item-value">github.com/swoyuj</span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <form class="contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                  <div class="form-group">
+                     <input type="hidden" name="access_key" value="27b1bf09-0f19-4155-a2f4-694af4c6c0be">
+                     <input type="hidden" name="subject" value="New Portfolio Contact Message">
+                     <input type="hidden" name="from_name" value="Portfolio Website">
+                     <input type="checkbox" name="botcheck" style="display:none;">
+                     <label for="name">Name <span aria-hidden="true">*</span></label>
+                     <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" aria-required="true" />
+                     <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="email">Email <span aria-hidden="true">*</span></label>
+                     <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-required="true" />
+                     <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="subject">Subject <span aria-hidden="true">*</span></label>
+                     <input type="text" id="subject" name="subject" placeholder="What is this about?" required aria-required="true" />
+                     <span class="form-error" id="subject-error" role="alert" aria-live="polite"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="message">Message <span aria-hidden="true">*</span></label>
+                     <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..." required aria-required="true"></textarea>
+                     <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send Message</button>
+                  <div class="form-success" id="form-success" role="alert" aria-live="polite" aria-hidden="true">
+                     Message received. I will be in touch shortly.
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="footer" role="contentinfo">
+         <div class="container">
+            <div class="footer-grid">
+               <div class="footer-brand">
+                  <a href="#home" style="width: 100px;height: 100px;display: flex;">
+                  <img src="android-chrome-192x192.png" alt="Swoyuj Bajracharya Logo">
+                  </a>
+                  <p>Technical Project Manager and Senior Full Stack Developer based in Kathmandu, Nepal. Open to remote opportunities worldwide.</p>
+               </div>
+               <div class="footer-links">
+                  <h4>Quick Links</h4>
+                  <nav aria-label="Footer navigation">
+                     <ul role="list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="footer-social">
+                  <h4>Connect</h4>
+                  <div class="social-links">
+                     <a href="https://www.linkedin.com/in/swoyuj-bajracharya/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                     <a href="https://github.com/swoyuj" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                     <a href="mailto:swoyujbajracharya@gmail.com" aria-label="Email">Email</a>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <p>© <span id="year"></span> Swoyuj Bajracharya. All Rights Reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <!-- BACK TO TOP -->
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+      <script src="script.js"></script>
+   </body>
 </html>
