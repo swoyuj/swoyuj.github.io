@@ -207,12 +207,14 @@
      ============================================ */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
+	  const href = this.getAttribute('href');
       const target = document.querySelector(this.getAttribute('href'));
       if (!target) return;
       e.preventDefault();
       const navHeight = navbar ? navbar.offsetHeight : 68;
       const targetTop = target.getBoundingClientRect().top + window.scrollY - navHeight;
       window.scrollTo({ top: targetTop, behavior: 'smooth' });
+	  history.pushState(null, null, href);
     });
   });
 
@@ -291,24 +293,46 @@
 
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
-        // DO NOT prevent default
-      
-        let isValid = true;
-      
-        fields.forEach(function (field) {
-          if (!validateField(field)) {
-            isValid = false;
-          }
-        });
-      
-        if (!isValid) {
-          e.preventDefault();
-          return;
+      e.preventDefault();
+
+      // Validate all fields
+      let isValid = true;
+      fields.forEach(function (field) {
+        if (!validateField(field)) {
+          isValid = false;
         }
-      
+      });
+
+      if (!isValid) return;
+
+      // Simulate submission (front-end only)
+      if (submitBtn) {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
-      });
+      }
+
+      setTimeout(function () {
+        if (submitBtn) {
+          submitBtn.textContent = 'Send Message';
+          submitBtn.disabled = false;
+        }
+
+        if (formSuccess) {
+          formSuccess.classList.add('visible');
+          formSuccess.removeAttribute('aria-hidden');
+        }
+
+        contactForm.reset();
+
+        // Hide success message after 6 seconds
+        setTimeout(function () {
+          if (formSuccess) {
+            formSuccess.classList.remove('visible');
+            formSuccess.setAttribute('aria-hidden', 'true');
+          }
+        }, 6000);
+      }, 900);
+    });
   }
 
   /* ============================================
