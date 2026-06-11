@@ -2,7 +2,7 @@
 
 Personal portfolio website built with pure HTML, CSS, and JavaScript.
 
-Live site: https://swoyuj.github.io (replace with your actual URL)
+Live site: [https://swoyujbajracharya.com.np/](https://swoyujbajracharya.com.np/) (replace with your actual URL)
 
 ## Tech Stack
 - HTML5
